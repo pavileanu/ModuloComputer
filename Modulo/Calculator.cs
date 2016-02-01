@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Modulo.Operation;
 
 namespace Modulo
 {
@@ -19,12 +20,35 @@ namespace Modulo
 
         private void getValueClick(object sender, System.EventArgs e)
         {
-            textBox1.Text = Modulo.Operation.Modulo.modOf(Convert.ToInt64(textBox1.Text)).ToString();
+            NumberBox.Text = ModuloAlgebra.modOf(Convert.ToInt64(NumberBox.Text)).ToString();
         }
 
         private void setModuloBlur(object sender, EventArgs e)
         {
-            Modulo.Operation.Modulo.ModuloSetNumber = Convert.ToInt64(textBox2.Text);
+            long aux;
+            if (Int64.TryParse(ModuloBox.Text.ToString(), out aux))
+                if (aux > 0)
+                {
+                    ModuloAlgebra.ModuloSetNumber = aux;
+                    return;
+                }
+          
+            MessageBox.Show("Modulo number has to be positive integer!");
+        }
+
+        private void Modulo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
         
     }

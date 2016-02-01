@@ -28,45 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.NumberBox = new System.Windows.Forms.TextBox();
+            this.NumberLabel = new System.Windows.Forms.Label();
+            this.ModuloBox = new System.Windows.Forms.TextBox();
+            this.ModuloLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // NumberBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(392, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 0;
+            this.NumberBox.Location = new System.Drawing.Point(392, 95);
+            this.NumberBox.Name = "NumberBox";
+            this.NumberBox.Size = new System.Drawing.Size(180, 20);
+            this.NumberBox.TabIndex = 0;
             // 
-            // label1
+            // NumberLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(389, 62);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Number";
+            this.NumberLabel.AutoSize = true;
+            this.NumberLabel.Location = new System.Drawing.Point(389, 62);
+            this.NumberLabel.Name = "NumberLabel";
+            this.NumberLabel.Size = new System.Drawing.Size(44, 13);
+            this.NumberLabel.TabIndex = 2;
+            this.NumberLabel.Text = "Number";
             // 
-            // textBox2
+            // ModuloBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(712, 95);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.Leave += new System.EventHandler(this.setModuloBlur);
+            this.ModuloBox.Location = new System.Drawing.Point(712, 95);
+            this.ModuloBox.Name = "ModuloBox";
+            this.ModuloBox.Size = new System.Drawing.Size(100, 20);
+            this.ModuloBox.TabIndex = 3;
+            this.ModuloBox.Leave += new System.EventHandler(this.setModuloBlur);
+            //this.ModuloBox.KeyPress += new System.EventHandler(this.Modulo_KeyPress);
             // 
-            // label2
+            // ModuloLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(709, 62);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Modulo Set";
+            this.ModuloLabel.AutoSize = true;
+            this.ModuloLabel.Location = new System.Drawing.Point(709, 62);
+            this.ModuloLabel.Name = "ModuloLabel";
+            this.ModuloLabel.Size = new System.Drawing.Size(61, 13);
+            this.ModuloLabel.TabIndex = 4;
+            this.ModuloLabel.Text = "Modulo Set";
             // 
             // button1
             // 
@@ -84,10 +85,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1332, 477);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ModuloLabel);
+            this.Controls.Add(this.ModuloBox);
+            this.Controls.Add(this.NumberLabel);
+            this.Controls.Add(this.NumberBox);
             this.Name = "Calculator";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -97,10 +98,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox NumberBox;
+        private System.Windows.Forms.Label NumberLabel;
+        private System.Windows.Forms.TextBox ModuloBox;
+        private System.Windows.Forms.Label ModuloLabel;
         private System.Windows.Forms.Button button1;
     }
 }
