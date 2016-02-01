@@ -1,0 +1,9 @@
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\bin\Debug\Modulo.exe.config
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\bin\Debug\Modulo.exe
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\bin\Debug\Modulo.pdb
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.csprojResolveAssemblyReference.cache
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.Calculator.resources
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.Properties.Resources.resources
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.csproj.GenerateResource.Cache
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.exe
+c:\users\mircea.pavileanu\documents\visual studio 2013\Projects\Modulo\Modulo\obj\Debug\Modulo.pdb
